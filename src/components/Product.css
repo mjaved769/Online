@@ -1,0 +1,115 @@
+/* Style for the product container */
+.product {
+    margin-bottom: 1rem;
+  }
+  
+  /* Style for the product image container */
+  .product-image-container {
+    border: 1px solid #e4e4e4;
+    height: 300px;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+  }
+  
+  /* Style for the product image */
+  .product-image {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Style for the product image itself */
+  .product-image-img {
+    max-height: 160px;
+    transition: transform 0.3s ease;
+  }
+  
+  /* Style for image hover effect */
+  .product-image-container:hover .product-image-img {
+    transform: scale(1.1);
+  }
+  
+  /* Style for the buttons container */
+  .product-buttons {
+    position: absolute;
+    top: 1.5rem;
+    right: -2.75rem; /* Move buttons out of view initially */
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    opacity: 0;
+    transition: opacity 0.3s ease, right 0.3s ease;
+  }
+  
+  /* Style for button appearance */
+  .product-button-add,
+  .product-button-view {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Style for add-to-cart button */
+  .product-button-add {
+    background-color: #14b8a6; /* Equivalent to bg-teal-500 in Tailwind */
+  }
+  
+  .product-button-add:hover .product-icon {
+    color: #ffffff;
+  }
+  
+  /* Style for view button */
+  .product-button-view {
+    background-color: #ffffff; /* Equivalent to bg-white in Tailwind */
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1); /* Equivalent to drop-shadow-xl in Tailwind */
+  }
+  
+  .product-button-view:hover .product-icon {
+    color: #3b82f6; /* Equivalent to text-primary in Tailwind */
+  }
+  
+  /* Show buttons on hover */
+  .product-image-container:hover .product-buttons {
+    right: 1.25rem; /* Move buttons into view */
+    opacity: 1;
+  }
+  
+  /* Style for product info section */
+  .product-info {
+    padding: 0.5rem 0;
+  }
+  
+  /* Style for product category */
+  .product-category {
+    font-size: 0.875rem; /* Equivalent to text-sm in Tailwind */
+    text-transform: capitalize;
+    color: #6b7280; /* Equivalent to text-gray-500 in Tailwind */
+    margin-bottom: 0.25rem;
+  }
+  
+  /* Style for product title link */
+  .product-title-link {
+    text-decoration: none;
+  }
+  
+  /* Style for product title */
+  .product-title {
+    font-weight: 600; /* Equivalent to font-semibold in Tailwind */
+    margin-bottom: 0.25rem;
+  }
+  
+  /* Style for product price */
+  .product-price {
+    font-weight: 600; /* Equivalent to font-semibold in Tailwind */
+  }
+  

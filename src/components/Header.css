@@ -1,0 +1,70 @@
+/* Base styling for the header */
+.header {
+  width: 100%;
+  z-index: 10;
+  position: fixed;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Active state for the header when scrolling */
+.header--active {
+  background-color: white;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Default header padding when not active */
+.header {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+/* Container styling */
+.header__container {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0 2rem;
+  padding-right: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+}
+
+/* Logo wrapper */
+.header__logo {
+  width: 60px;
+}
+
+/* Cart wrapper */
+.header__cart {
+  cursor: pointer;
+  display: flex;
+  position: relative;
+}
+
+/* Cart icon styling */
+.header__cart-icon {
+  font-size: 2rem;
+}
+
+/* Cart item count bubble */
+.header__cart-count {
+  background-color: #f56565; /* Red color */
+  position: absolute;
+  right: -0.5rem;
+  bottom: -0.5rem;
+  font-size: 0.75rem; /* 12px */
+  width: 18px;
+  height: 18px;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.center{
+
+  padding-left: 500px;
+}

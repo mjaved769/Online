@@ -1,0 +1,19 @@
+/* Style for the footer container */
+.footer {
+    background-color: #3b82f6; /* Tailwind's primary color */
+    padding: 3rem 0; /* py-12 in Tailwind */
+  }
+  
+  /* Style for the footer text container */
+  .footer-container {
+    max-width: 1200px; /* Tailwind's container */
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  /* Style for the footer text */
+  .footer-text {
+    color: #ffffff; /* Tailwind's text-white */
+    font-size: 1rem; /* Tailwind's text-base */
+  }
+  

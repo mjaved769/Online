@@ -1,0 +1,120 @@
+/* Sidebar container */
+.sidebar {
+  width: 100%;
+  background-color: #ffffff; /* Equivalent to bg-white in Tailwind */
+  position: fixed;
+  top: 0;
+  height: 100%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Equivalent to shadow-2xl in Tailwind */
+  transition: right 0.3s ease;
+  padding: 1rem 1.5rem;
+  z-index: 20;
+}
+
+/* Sidebar open state */
+.sidebar-open {
+  right: 0;
+}
+
+/* Sidebar closed state */
+.sidebar-closed {
+  right: -100%;
+}
+
+/* Sidebar header */
+.sidebar-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #e4e4e4; /* Equivalent to border-b in Tailwind */
+}
+
+/* Sidebar title */
+.sidebar-title {
+  text-transform: uppercase;
+  font-size: 0.875rem; /* Equivalent to text-sm in Tailwind */
+  font-weight: 600; /* Equivalent to font-semibold in Tailwind */
+}
+
+/* Close button */
+.sidebar-close {
+  cursor: pointer;
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Close button icon */
+.sidebar-close-icon {
+  font-size: 1.5rem; /* Equivalent to text-2xl in Tailwind */
+}
+
+/* Sidebar content */
+.sidebar-content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  height: 360px; /* Adjusted for different screen sizes */
+  overflow-y: auto;
+  overflow-x: hidden;
+  border-bottom: 1px solid #e4e4e4; /* Equivalent to border-b in Tailwind */
+}
+
+/* Sidebar footer */
+.sidebar-footer {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem; /* Equivalent to gap-y-3 in Tailwind */
+  margin-top: 1rem;
+}
+
+/* Total amount */
+.sidebar-total {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 600; /* Equivalent to font-semibold in Tailwind */
+}
+
+/* Clear cart button */
+.sidebar-clear-cart {
+  cursor: pointer;
+  padding: 1rem;
+  background-color: #ef4444; /* Equivalent to bg-red-500 in Tailwind */
+  color: #ffffff; /* Equivalent to text-white in Tailwind */
+  width: 3rem;
+  height: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.25rem; /* Equivalent to text-xl in Tailwind */
+}
+
+/* View cart link */
+.sidebar-view-cart {
+  background-color: #e5e7eb; /* Equivalent to bg-gray-200 in Tailwind */
+  display: flex;
+  padding: 0.75rem;
+  justify-content: center;
+  align-items: center;
+  color: #3b82f6; /* Equivalent to text-primary in Tailwind */
+  font-weight: 500; /* Equivalent to font-medium in Tailwind */
+  text-decoration: none;
+  width: 100%;
+}
+
+/* Checkout link */
+.sidebar-checkout {
+  background-color: #3b82f6; /* Equivalent to bg-primary in Tailwind */
+  display: flex;
+  padding: 0.75rem;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff; /* Equivalent to text-white in Tailwind */
+  font-weight: 500; /* Equivalent to font-medium in Tailwind */
+  text-decoration: none;
+  width: 100%;
+}
